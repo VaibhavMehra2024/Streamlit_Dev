@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df = pd.read_csv('/home/vaibhav/streamlit_dev/Input_Sales_Data_v2.csv')
+df = pd.read_csv('./Input_Sales_Data_v2.csv')
 df.drop('Unnamed: 0', axis=1, inplace=True)
 df["Date"] = pd.to_datetime(df["Date"])
 
